@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exercises';
-  name: string = 'Savon';
+  heading: string = 'User Post';
+  num: number = 1;
 }
