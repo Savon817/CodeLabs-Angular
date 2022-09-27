@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title:string="Header"
+
+  changeTitle(e){
+    this.title = e.target.value
+  }
 }
