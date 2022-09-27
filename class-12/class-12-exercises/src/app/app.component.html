@@ -1,0 +1,13 @@
+<h3>Exercise 1</h3>
+<img [width]="width" [height]="height" src="https://cdn.britannica.com/90/3890-050-F451C580/rainforest-coast-lowland-rainforests-Ecuador-tropics-evergreen.jpg">
+
+<!-- Event Binding -->
+<h3>Exercise 2</h3>
+<button (click)="logConsole()">Click on me to log to the console</button>
+
+
+<h3>Exercise 3</h3>
+<input type="text" [disabled]="isDisabled">
+<button (click)="toggleDisable()">Click to the change the value of isDisabled</button>
+
+<p>{{ isDisabled ? 'Currently Disabled' : 'Not Disabled'}}</p>
