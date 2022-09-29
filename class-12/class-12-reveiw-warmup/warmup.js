@@ -12,7 +12,12 @@ console.log(updateNames(nameStr));
 let newSentence = "My name is John!"
 
 function reverse(str) {
-    let reverseStr = str.split('').reverse().join('');
+    let reverseStr ='';
+
+    for (let i = str.length - 1; i >= 0; --i){
+        reverseStr += str[i];
+    }
+
     return reverseStr;
   }
   
