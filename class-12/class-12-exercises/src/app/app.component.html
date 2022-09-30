@@ -1,2 +1,2 @@
-<input type="text" [ngModel]="changeColor">
-<p>{{changeColor}}</p>
+<input type="text" [(ngModel)]="changeColor" >
+<p [ngStyle]="{color: changeColor}">{{changeColor}}</p>
