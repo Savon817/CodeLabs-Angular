@@ -1,2 +1,4 @@
-<p *ngIf="isShow">Show me when isShow is true!</p>
+<p *ngIf="isShowContent; else showElse">If isShowContent is true, show me</p>
+<ng-template #showElse><p>Use else to show me</p></ng-template>
 
+<button (click)="onReverseContent()">Click me to reverse the value of the of isShowContent!</button>

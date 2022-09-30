@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  isShow: boolean = true;
+  isShowContent: boolean = true;
+
+
+
+  onReverseContent(){
+    if(this.isShowContent === true){
+      this.isShowContent = false;
+    }else{
+      this.isShowContent = true;
+    }
+  }
 }
