@@ -1,6 +1,14 @@
 <div class="container">
   <h1 class="text-center">Todo List</h1>
-  <div *ngfor="let item of todolist">
+  <div *ngFor="let item of todolist; let i = index">
     <p>ID: {{item.id}}</p>
+    <p>Action: {{item.action}}</p>
+    <p *ngIf="!item.completed">Needs to be completed!</p>
+    <button (click)="toggleComplete(i)" [ngClass]="item.completed ? 'btn btn-success': 'btn-secondary btn'">{{ item.completed ? "Set Incomplete " : "Set Complete "}}
+    </button>
   </div>
+
+  <button (click)="addTodo()">Add Todo</button>
 </div>
+
+<app-todo></app-todo>

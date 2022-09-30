@@ -6,6 +6,8 @@ import { Todo } from './shared/todolist.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   todolist: Todo[] =[
     {
@@ -21,6 +23,16 @@ export class AppComponent {
   ]
 
   toggleComplete(index){
-    this.todolist
+    this.todolist[index].completed = !this.todolist[index].completed
+  }
+
+  addTodo(){
+    let newTodo: Todo = {
+      id: this.todolist.length+1,
+      action: "Another Chore",
+      completed: false
+    }
+
+    this.todolist.push(newTodo);
   }
 }
