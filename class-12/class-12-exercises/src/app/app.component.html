@@ -1,3 +1,2 @@
-<h1>{{title}}</h1>
-
-<input (input)="changeTitle($event)" [value]="title">
+<p *ngIf="isShow; else showElse">Show me when isShow is true!</p>
+<ng-template #showElse>isShow is false</ng-template>
