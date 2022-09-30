@@ -1,4 +1,1 @@
-<p *ngIf="isShowContent; else showElse">If isShowContent is true, show me</p>
-<ng-template #showElse><p>Use else to show me</p></ng-template>
-
-<button (click)="onReverseContent()">Click me to reverse the value of the of isShowContent!</button>
+<p [ngStyle]="{backgroundColor: myColor}">This should change when we implement ngStyle!</p>

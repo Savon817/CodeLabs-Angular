@@ -7,15 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  isShowContent: boolean = true;
-
-
-
-  onReverseContent(){
-    if(this.isShowContent === true){
-      this.isShowContent = false;
-    }else{
-      this.isShowContent = true;
-    }
-  }
+  myColor: string = "green";
 }
