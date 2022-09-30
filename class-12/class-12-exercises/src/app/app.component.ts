@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  myColor: string = "green";
+  // myColor: string = "green";
+  changeColor: string = 'green';
+
 }
