@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name: string = "Savon Williams"
+  myPosts: string[] = [
+    "Hello",
+    "There",
+    "My",
+    "Young",
+    "Padawan."
+  ];
 }
