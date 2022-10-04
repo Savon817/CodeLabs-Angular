@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BookIt';
+  showPage: string = "bookshelf";
+
+  onDisplayPage(page: string){
+    console.log("I want to navigate to " + page);
+  }
 }
