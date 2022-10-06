@@ -10,6 +10,6 @@ export class AppComponent {
   showPage: string = "bookshelf";
 
   onDisplayPage(page: string){
-    console.log("I want to navigate to " + page);
+    this.showPage = page;
   }
 }
