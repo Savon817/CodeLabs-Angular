@@ -11,8 +11,8 @@ export class TodoService {
     }
   ];
 
-  getTodo(){
-    return this.todos.splice();
+  getTodos(){
+    return this.todos.slice();
   }
 
   constructor() { }
