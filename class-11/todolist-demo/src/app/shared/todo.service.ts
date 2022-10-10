@@ -7,9 +7,7 @@ import { Todo } from './todolist.model';
 export class TodoService {
   private todos: Todo[] = [
     {
-      id: 1,
       action: "Dishes",
-      completed: true
     }
   ];
 
