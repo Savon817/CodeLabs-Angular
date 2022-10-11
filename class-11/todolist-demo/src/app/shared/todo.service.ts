@@ -7,7 +7,10 @@ import { Todo } from './todolist.model';
 export class TodoService {
   private todos: Todo[] = [
     {
-      action: "Dishes",
+      action: "Mowing Lawn",
+    },
+    {
+      action: "Clean Kitchen"
     }
   ];
 

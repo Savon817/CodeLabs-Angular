@@ -2,3 +2,4 @@
 <div *ngFor="let todo of todoList">
   <app-todo [todo]="todo"></app-todo>
 </div>
+<button class="btn btn-primary" (click)="onAddTodo()" routerLink="/add">Add</button>

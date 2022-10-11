@@ -6,6 +6,7 @@ import { TodoListComponent } from './todoList/todoList.component';
 import { TodoComponent } from './shared/todo/todo.component';
 import { HeaderComponent } from './header/header.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
+import { AppRouteModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TodoFormComponent } from './todo-form/todo-form.component';
     TodoFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
