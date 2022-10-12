@@ -6,7 +6,7 @@ import { Recipe } from "./recipe.model";
 
 @Injectable()
 export class RecipeService{
-  recipeSelected = new EventEmitter<Recipe>();
+
 
   private recipes: Recipe[] = [
     new Recipe('Delicious Tacos', 'Crazy Good Tacos', 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/birria-tacos-1648842127.jpg',
