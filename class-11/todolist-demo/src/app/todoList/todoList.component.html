@@ -1,5 +1,15 @@
 <h1>Todo List</h1>
-<div *ngFor="let todo of todoList">
-  <app-todo [todo]="todo"></app-todo>
+<div class="row">
+  <div class="col-md-6">
+    <div *ngFor="let todo of todoList">
+      <app-todo [todo]="todo"></app-todo>
+    </div>
+    <button class="btn btn-primary" (click)="toggleAddTodo()">{{ addBtnName }}</button>
+  </div>
+  <ng-container *ngIf="showAddForm">
+    <div class="col-md-6">
+      <router-outlet></router-outlet>
+    </div>
+  </ng-container>
 </div>
-<button class="btn btn-primary" (click)="onAddTodo()" routerLink="/add">Add</button>
+

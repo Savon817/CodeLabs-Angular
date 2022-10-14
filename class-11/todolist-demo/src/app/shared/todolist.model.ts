@@ -1,3 +1,5 @@
-export interface Todo{
-  action: string;
+export class Todo{
+  constructor(public action: string){
+
+  }
 }
