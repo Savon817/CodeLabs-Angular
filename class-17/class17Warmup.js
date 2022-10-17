@@ -16,13 +16,13 @@ function isAnagram(first, second){
 console.log(isAnagram("cinema", "iceman")); // true 
 console.log(isAnagram("organge", "yellow"));//false
 
-// nameCount(name, sentence){
+// function nameCount(name, sentence){
 //     let str = sentence.split("");
 //     let count = 0;
-//     for(let i = 0; i < words.length; i++){
-//         if(word[i].include(name){
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i].includes(name)){
 //             count++
-//         })
+//         }
 //     }
 //     console.log(count);
 // }
